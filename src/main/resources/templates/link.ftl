@@ -22,7 +22,10 @@
     <a href="/" style="color: red" class="badge badge-secondary">To home</a>
 
     <div style="display: flex; margin-bottom: 30px; margin-top: 30px; justify-content: space-between;">
-        <p>Total</p> <p>${total}</p>
+        <p>Total link</p> <p>${totalLink}</p>
+    </div>
+    <div style="display: flex; margin-bottom: 30px; margin-top: 30px; justify-content: space-between;">
+        <p>Total foreign link</p> <p>${totalForeignLink}</p>
     </div>
     <table class="table">
         <thead class="thead-dark">

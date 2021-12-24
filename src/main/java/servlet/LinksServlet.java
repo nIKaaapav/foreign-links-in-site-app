@@ -28,10 +28,12 @@ public class LinksServlet extends HttpServlet {
         String link = req.getParameter("url");
 
         List<LinkData> links = linksService.getAllLinksInSite(link);
+        int totalForeignLinks = linksService.totalForeignLinks(links);
         Map<String, Object> data = new HashMap<>();
 
         data.put("links", links);
-        data.put("total", links.size());
+        data.put("totalLink", links.size());
+        data.put("totalForeignLink", totalForeignLinks);
 
         te.render("/link.ftl", data, resp);
     }
